@@ -17,7 +17,7 @@ print("   TRAINING STARTED")
 print("==============================\n")
 
 # Load Dataset
-df = pd.read_csv("cotton-crop-disease-dataset (1).csv")
+df = pd.read_csv("cotton_data.csv")
 print("Columns:", df.columns.tolist())
 
 # Features and Target
@@ -78,6 +78,7 @@ print("\n📌 All Model Accuracies:")
 for model_name, acc in model_accuracy.items():
     print(f"{model_name}: {acc*100:.2f}%")
 print("\n🎉 Model & Encoder Saved Successfully!\n")
+
 
 
 
