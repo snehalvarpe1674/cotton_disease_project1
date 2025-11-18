@@ -9,7 +9,7 @@ model = pickle.load(open("best_model.pkl", "rb"))
 encoder = pickle.load(open("encoder.pkl", "rb"))
 
 # Load dataset for dropdowns and product mapping
-df = pd.read_csv("cotton-crop-disease-dataset (1).csv")
+df = pd.read_csv("cotton_data.csv")
 feature_columns = ['Crop', 'Crop Stage']
 
 # Dropdown options
@@ -48,6 +48,7 @@ def predict():
 if __name__ == "__main__":
     print("🚀 Flask app starting... Open http://127.0.0.1:5000 in your browser")
     app.run(debug=True)
+
 
 
 
